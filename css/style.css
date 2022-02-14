@@ -1,0 +1,112 @@
+/*&display=swap*/
+@import url(null.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:regular,700,900,);
+.wraper{
+	overflow: hidden;
+	min-height: 100%;
+	margin: 0 auto;
+	max-width: 390px;
+}
+body{
+	font-family: "Lato";
+	font-weight: 400;
+	line-height: 1.7;
+	font-size: 16px;
+}
+
+.header {
+	margin:180px 0px 40px 0px;
+}
+.header-subtitle {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.header-title {
+font-weight: 900;
+font-size: 46px;
+line-height: 1.3;
+
+}
+
+.header-title::before{
+content: "";
+display: inline-block;
+margin:0px 0px 0px -50px;
+width: 50px;
+  height: 50px;
+	background: url("../img/figa2.jpg") 0 0 /50px no-repeat;
+	opacity: 0;
+	transition: all 0.8s ease-in-out 0s;
+}
+.header-title:hover::before{
+	margin:0px 32px 0px 0px;
+		opacity: 1;
+	}
+.list {
+	margin:0px 0px 22px 0px;
+	
+}
+.list-item {
+	color:rgba(66, 69, 81, 1);
+	padding:0px 0px 0px 32px;
+	
+}
+.list-item:not(:last-child) {
+	
+	margin:0px 0px 12px 0px;
+	
+}
+.list li::before{
+content: "";
+width: 16px;
+height: 16px;
+display: inline-block;
+margin:0px 0px 0px -32px;
+padding:0px 0px 0px 32px;
+background: url("../img/check.png") 0 0 /16px no-repeat;
+transition: all 0.8s ease-in-out 0s;
+
+}
+.list li:hover{
+	cursor: pointer;
+}
+.list li:hover::before{
+	
+	width: 50px;
+  height: 50px;
+	background: url("../img/figa1.jpg") 0 0 /50px no-repeat;
+
+}
+.list li:last-child:hover::before{
+	width: 300px;
+	height: 300px;
+	background: url("../img/face.png") 0 0 /300px no-repeat;
+
+}
+.list li:nth-child(odd):hover::before{
+	width: 400px;
+  height: 400px;
+  
+	background: url("../img/i.webp") 0 0 /400px no-repeat;
+
+}
+
+.btn-link {
+	display: inline-block;
+	background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+border-radius: 4px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 3.14;
+color: #fff;
+	padding:0px 32px;
+	margin:0px 0px 30px 0px;
+	transition: all 0.8s ease-in-out 0s;
+}
+.btn-link:hover{
+/* 	border: 1px solid black;
+	text-shadow: 2px 2px 0px grey; */
+	/* transform: translate(1000px); */
+	opacity: 0;
+	visibility: hidden;
+}
